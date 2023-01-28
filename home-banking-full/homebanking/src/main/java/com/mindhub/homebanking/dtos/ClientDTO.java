@@ -1,3 +1,4 @@
+/*
 package com.mindhub.homebanking.dtos;
 
 import com.mindhub.homebanking.models.Client;
@@ -77,3 +78,4 @@ public class ClientDTO {
         this.accounts = accounts;
     }
 }
+*/

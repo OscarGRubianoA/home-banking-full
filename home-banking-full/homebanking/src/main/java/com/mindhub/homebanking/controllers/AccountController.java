@@ -1,4 +1,4 @@
-package com.mindhub.homebanking.controllers;
+/*package com.mindhub.homebanking.controllers;
 
 public class AccountController {
-}
+}*/

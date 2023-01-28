@@ -24,13 +24,16 @@ public class HomebankingApplication {
 	@Bean
 	public CommandLineRunner initData(ClientRepository clientRepository, AccountRepository accountRepository){
 		return args ->{
-			Client cliente1 = new Client("Oscar", "Rubiano", "oscar@gmail.com");
+			Client cliente1 = new Client("Melba", "Morel", "melba@mindhub.com");
 			clientRepository.save(cliente1);
 
-			Account account1=new Account("Vin001", LocalDateTime.now(),256321.00);
+			Account account1=new Account("VIN001", LocalDateTime.now(),5000.00);
+			Account account2=new Account("VIN002", LocalDateTime.now(),7500.00);
 			System.out.println(account1);
 			cliente1.AddCount(account1);
+			cliente1.AddCount(account2);
 			accountRepository.save(account1);
+			accountRepository.save(account2);
 
 		};
 	}

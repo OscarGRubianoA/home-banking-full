@@ -1,4 +1,4 @@
-package com.mindhub.homebanking.dtos;
+/*package com.mindhub.homebanking.dtos;
 
 public class AccountDTO {
-}
+}*/
