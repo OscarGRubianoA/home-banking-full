@@ -1,5 +1,6 @@
 package com.mindhub.homebanking.models;
 
+import net.minidev.json.annotate.JsonIgnore;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
@@ -31,6 +32,7 @@ public class Account {
     }
     public Account(String number, LocalDateTime creationDate, Double balance) {
         this.id = id;
+        this.number=number;
         this.creationDate = creationDate;
         this.balance = balance;
     }

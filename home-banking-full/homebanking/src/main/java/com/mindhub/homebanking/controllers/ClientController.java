@@ -2,6 +2,7 @@
 package com.mindhub.homebanking.controllers;
 
 
+import com.mindhub.homebanking.dtos.ClientDTO;
 import com.mindhub.homebanking.models.Client;
 import com.mindhub.homebanking.repositories.ClientRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,8 +23,8 @@ public class ClientController {
     private ClientRepository clientRepository;
 
     @RequestMapping("/clients")
-    public List<Client> getClients(){
-        return clientRepository.findAll().stream().map(client -> new Client(client)).collect(toList());
+    public List<ClientDTO> getClients(){
+        return clientRepository.findAll().stream().map(client -> new ClientDTO(client)).collect(toList());
     }
   /*  @RequestMapping("clients/{id}")
     public Client getClient(@PathVariable Long id){
