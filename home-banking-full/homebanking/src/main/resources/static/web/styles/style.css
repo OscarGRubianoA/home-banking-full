@@ -1,0 +1,638 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  height: 9vh;
+  display: flex;
+  justify-content: space-between;
+  
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: .3rem;
+ 
+  
+  
+}
+header img {
+  height: 12.2vh;
+  width: 25rem;
+}
+header a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+}
+header div{
+  display: flex;
+  align-items: center;
+  
+  width: 100%;
+ 
+ 
+}
+header div .header__left{
+  display: flex;
+  gap: 2rem;
+  width: 50%;
+  padding-left: 3rem;
+  
+}
+header div .header__rigth{
+  display: flex;
+  
+  
+
+
+}
+header div .header__rigth a{
+  color: black;
+  
+  
+}
+header div .header__rigth a:hover{
+  color: #008ACC;
+}
+
+.header__bottom{
+  min-height: 10vh;
+  
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__bottom img{
+ 
+ width: 16rem;
+ border: 1px solid black;
+ 
+}
+.a__turnos {
+  background-color: white;
+  color: #007894;
+  
+}
+.img__turnos {
+  width: 4rem;
+  border-radius: 0 1rem 1rem 0;
+}
+
+.img__candado {
+  width: 10.7rem;
+  height: 7.9rem;
+
+
+
+  background-image: url(https://www.bna.com.ar/Images/icon_candado_nuevo.png);
+  background-repeat: no-repeat;
+  background-position:right;
+  text-align:left;
+  
+  
+}
+.activo {
+  background-color: #036b84;
+
+  height: 12.2vh;
+}
+/* i{
+  font-size: 2.5rem;
+  
+  color: #008ACC;
+  background-color: white;
+} */
+#icon__search{
+  color: white;
+  background-color: #008ACC;
+}
+.navbar{
+  padding: 2rem;
+  background-color: #f5f6f7;
+}
+.navbar-collapse{
+  align-items: center;
+  justify-content: space-around;
+}
+#clock {
+  font-size: 36px;
+  font-weight:bold;
+  text-align:center;
+  
+  color: rgb(0, 90, 0);
+  width: 100%;
+  height: 100%;
+ }
+.logo__rolex{
+  background-color: rgb(0, 90, 0);
+  
+}
+#carouselExampleAutoplaying {
+  height: 47.2vh;
+}
+/* .carousel-inner{
+    height: 50vh;
+   
+} */
+/* .active{
+    height: 47.2vh;
+}  */
+.carrusel1 {
+  width: 40rem;
+  
+}
+.container1 {
+  height: 50vh;
+  display: flex;
+  
+  
+}
+.main__accounts{
+ border: 1px solid red;
+ height: 80vh;
+ width: 100%;
+  background-image: url(../assets/images/background_cuentas.jpg);
+  background-repeat:no-repeat;
+  background-size: 100%;
+  
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+  font-size: 2.5rem;
+  font-family: 'Rubik Dirt', cursive;
+}
+.seccion__oscura{
+
+  color:white;
+  background-color: #1b1b32;
+}
+.seccion__clara{
+  color: black;
+  background-color: white;
+}
+.seccion__titulo{
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: 'Rubik dirt', cursive;
+  
+}
+.seccion__descripcion{
+
+  font-size: 1.2rem;
+  color: #584e4e;
+}
+.seccion__texto{
+  font-size: 1.2rem;
+  color:black;
+  
+      height: calc(100vh -  8em);  
+      
+    color: rgba(255,255,255,.75);
+     font-family: 'Anonymous Pro', monospace;  
+    /* background-color: rgb(25,25,25);  */ 
+    width: 100%;
+  
+}
+.line-1{
+  position: relative;
+   top: 50%;  
+  
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+   font-size: 1.2rem; 
+  text-align:start;
+  white-space:normal;
+  overflow: hidden;
+  transform: translateY(-50%);   
+  
+}
+
+/* Animation */
+.anim-typewriter{
+animation: typewriter 4s steps(44) 1s 1 normal both,
+           blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+from{width: 0;}
+to{width: 100%;}
+}
+@keyframes blinkTextCursor{
+from{border-right-color: rgba(255,255,255,.75);}
+to{border-right-color: transparent;}
+}
+.btn-info{
+font-size: 1.1rem;
+margin: 20px;
+
+}
+.texto__negro{
+  color: black;
+}
+.texto__blanco{
+  font-size: 1.2rem;
+
+  color:#584e4e;
+}
+.hero{
+
+  background-color: #f5f6f7;
+  min-height: 450px;
+  text-align: center;
+}
+.hero-principal{
+  padding: 3rem;
+}
+.hero-principal h2{
+  font-size:1.5rem;
+  color:#615151;
+}
+.hero-imagen-desarrollador
+{
+  width:200px;
+  height: 200px;
+  border-radius: 50%;
+  margin:20px;
+
+}
+.sobre__mi
+{
+  height: 500px;
+  padding: 10px;
+  background-image: url(../assets/images/background__bank.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  object-fit:contain;
+}
+.sobre__mi .contenedor{
+  max-width: 600px;
+  text-align: center;
+}
+.experiencia 
+{
+  padding: 40px 40px 60px 40px;
+}
+.experiencia .columna{
+
+  padding: 20px;
+  border: 2px solid #8080804d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.2s ease-in;
+}
+.experiencia .columna:hover{
+  color: white;
+  background-color: #1b1b32;
+
+}
+.experiencia i{
+  font-size: 2.5rem;
+  color: #7ade30;
+  background-color: #0a0a23;
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.experiencia__titulo
+{
+  font-size: 25px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.badges-contenedor
+{
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.badge{
+  margin: 5px;
+
+}
+.proyectos__recientes{
+padding: 40px;
+}
+.proyectos__recientes img{
+
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  display: block;
+  transition: all 0.2s ease;
+}
+.proyectos__contenedor{
+  padding-top: 60px; 
+  margin-bottom: 40px;
+}
+.overlay{
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+
+}
+.overlay p{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #008ACC;
+}
+.proyecto{
+
+  position: relative;
+}
+.proyecto:hover img{
+  opacity:0.2;
+}
+.proyecto:hover .overlay{
+  opacity:1;
+}
+.overlay .iconos-contenedor{
+  display: flex;
+}
+
+.overlay i{
+  color:#008ACC;
+  font-size: 60px;
+  margin: 10px;
+}
+.articulos
+{min-height: 500px;
+  padding: 30px;
+}
+.articulos .card
+{
+  width: 80%;
+  max-width: 600px;
+  margin: 20px;
+}
+.articulos .card-header
+{
+  font-weight: bold;
+}
+.testimonios
+{padding: 40px 40px 80px 40px;
+}
+.testimonios .carousel
+{
+  max-width: 800px;
+}
+.carousel-item{
+  height: 500px;
+}
+.carousel-item .container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.testimonio-imagen
+{
+  height: 150px;
+  width: 150px;
+  margin: 10px 10px 20px 10px;
+  
+}
+.testimonio-texto
+{
+  max-width: 70%;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+}
+.testimonio-info{
+font-weight: bold;
+text-align: center;
+
+}
+.testimonio-info p{
+  margin-bottom: 0;
+}
+.testimonio-footer .cliente
+{
+  font-size: 1.2rem;
+}
+.testimonio-info .cargo{
+  font-size: 0.9rem;
+  color: #656060;
+}
+.contacto .container{
+
+  max-width: 1100px;
+  min-height: 200px;
+  padding: 20%;
+}
+.contacto .rectangulo{
+margin-top: -5rem;
+background-color: rgb(13,110,253);
+border-radius: 10px;
+box-shadow: 0px 1px 4px 1px white;
+}
+.contacto .row
+{
+  width: 100%;
+  display: flex;
+  
+  align-items: center;
+}
+.contacto .descripcion{
+  color: white;
+  font-size: 1.2rem;
+}
+.contacto button{
+  color: white;
+  font-weight: bold;
+  background-color: transparent;
+  border:2px solid white;
+  padding: 1.25em 2em;
+  margin: 10px;
+  border-radius: 100px;
+  transition: all 0.2s ease-in-out;
+}
+.contacto button:hover{
+  background-color: white;
+  color: black;
+}
+.contacto button i{
+  color: white;
+  font-size: 1.3rem;
+  transition: all 0.2s ease-in-out;
+}
+.contacto button:hover i
+{
+  color: black;
+}
+.footer{
+  min-height: 500px;
+}
+.footer-logo
+{
+height: 80px;
+width: 80px;
+margin:10px;
+}
+.footer-texto
+{font-size: 1.5rem;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-family: 'Quicksand', sans-serif;
+}
+.iconos-redes-sociales a{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  margin: 10px;
+  border: 2px solid black;
+  transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales i{
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.2s ease-in;
+}
+.iconos-redes-sociales a:hover
+{
+  background-color: white;
+  border:2px solid rgb(13,110,253)
+}
+.iconos-redes-sociales a:hover i{
+  color: black;
+}
+.derechos-de-autor
+{
+  font-size: 15px;
+  color: #aeaeae;
+  padding: 20px;
+}
+ .pre__footer{
+  display: flex;
+  justify-content:space-evenly;
+  align-items:center;
+  padding: 1rem;
+}
+
+
+.pre__footer div a{
+  text-decoration: none;
+  color: black;
+}
+.pre__footer div img{
+  width: 35px;
+}
+footer{
+  min-height: 100vh;
+  
+  background: rgb(9,73,121);
+background: linear-gradient(90deg, rgba(9,73,121,1) 0%, rgba(0,159,255,1) 100%);
+  color:white;
+  
+}
+footer .footer__top{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+footer img{
+  width: 15rem;
+  
+  
+}
+footer div{
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  
+
+}
+footer>div>div{
+  display:flex;
+  flex-direction: row;
+  color: white;
+  justify-content: center;
+  align-items: flex-start;
+ 
+}
+footer>div>div>div{
+  width: 16rem;
+  font-size: .7rem;
+  display: flex;
+  justify-content: center;
+  align-items:flex-start;
+}
+footer div div div a{
+  text-decoration: none;
+  color: white;
+  display: flex;
+  gap: 0;
+  height: 1rem;
+}
+footer div div div h5{
+  text-decoration:none;
+
+}
+footer div div div h5::after{
+ 
+  
+  content:"___";
+  color:#008ACC;
+  
+} 
+@media screen and (max-width:400px)
+{
+  .overlay p {
+    font-size: 18px;
+  }
+  .overlay i{
+    font-size: 40px;
+  }
+}
+@media screen and (max-width:576px){
+  .navbar-brand{
+    display: none;
+  }
+  
+  @media screen and (max-width:800px)
+  {
+    .testimonio-imagen{
+      height: 120px;
+      width: 120px;
+    }
+    .testimonio-texto{
+      font-size: 18px;
+      
+    }
+  
+}
+@media screen and (min-width:700px){
+.hero__inferior__imagen{
+ width: 600px;
+ }
+}
+
+}

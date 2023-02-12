@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Banking</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="./assets/images/icon_banco_occidente-removebg-preview.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+    <script src="https://kit.fontawesome.com/86e6690089.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <a class="navbar-brand" href="#"><img src="./assets/images/icon_banco_occidente-removebg-preview.png"
+                        width="50" alt="icon_banco_occidente-removebg-preview"></a>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./pages/accounts.html">Quienes somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contactanos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Oficinas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" disabled>Haz tus pagos</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Type here" aria-label="Search">
+                    <button class="btn btn-outline-info" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container-fluid ">
+            <div class="header__left">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+                <i class="fa-solid fa-arrow-up-a-z"></i>
+                <i class="fa-solid fa-arrow-down-z-a"></i>
+            </div>
+            <div class="header__rigth">
+                <a href="./pages/accounts.html">Personas</a>
+                <a href="./pages/account.html">Empresas</a>
+                <a href="">SimulaSolicita</a>
+                <a href="">Transacciones</a>
+                <div id="logo__rolex">
+<!--                     <img class="logo__rolex" src="./assets/images/Rolex-Logo-removebg-preview.png" alt=""> -->
+                    
+                    <h1 id="clock"></h1>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+
+    <main>
+        <!-- <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src=" https://www.bna.com.ar/Images/slider/Slide_SolicitaTuTarjeta_2022b.jpg "
+                        class="d-block w-100" alt="tarjeta">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5></h5>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="https://www.bna.com.ar/Images/internas/SlideInterno_CuentaSueldo.jpg"
+                        class="d-block w-100" alt="cuenta">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Second slide label</h5>
+                        <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="https://www.bna.com.ar/Images/slider/SlideHome_Verano2023.jpg" class="d-block w-100"
+                        alt="verano">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                </div>
+
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div class="container1">
+            <div class="carrusel1">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="	https://www.bna.com.ar/Images/slider/Slide_SolicitaTuTarjeta_2022b.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.bna.com.ar/Images/internas/SlideInterno_CuentaSueldo.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="carrusel1">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="	https://www.bna.com.ar/Images/slider/Slide_SolicitaTuTarjeta_2022b.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.bna.com.ar/Images/internas/SlideInterno_CuentaSueldo.jpg"
+                                class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Cotizacion Billetes</th>
+                        <th>Cotizacion divisas</th>
+                    </tr>
+                <tbody>
+                    <tr>
+                        <th>20/01/2023</th>
+                        <th>Compra</th>
+                        <th>Venta</th>
+                    </tr>
+                    <tr>
+                        <th>Dolar U.S.A.</th>
+                        <th>181,7500</th>
+                        <th>189,7500</th>
+                    </tr>
+                    <tr>
+                        <th>Euro</th>
+                        <th>193,5000</th>
+                        <th>202,5000</th>
+                    </tr>
+                    <tr>
+                        <th>Real*</th>
+                        <th>3405,0000</th>
+                        <th>3805,0000</th>
+                    </tr>
+                </tbody>
+                </thead>
+            </table>
+        </div> -->
+        <!-- seccion hero -->
+        <section id="sobre-mi" class="sobre__mi seccion__oscura">
+            
+
+            <div class="contenedor">
+                <h2 class="seccion__titulo texto__blanco animate__animated animate__jackInTheBox">Conoce al Banco de Occidente</h2>
+
+                <p class="seccion__texto line-1 anim-typewriter">Somos una entidad financiera colombiana perteneciente al Grupo Aval Acciones y
+                    Valores, con sede principal en la ciudad de Cali, ciudad donde nacimos el 3 de mayo de 1965, tenemos
+                    una amplia trayectoria y experiencia, bajo una cultura de liderazgo, innovación, oportunidad y
+                    efectividad que ha contribuido a generar relaciones a largo plazo con nuestros clientes. <br>
+                    <br><b>Nuestro propósito es: </b> Hacer realidad el desarrollo de las personas, el crecimiento de
+                    los negocios y la transformación del País.
+                    <br>
+
+                    En esta sección encontrarás todo lo relacionado con nuestra información corporativa: historia,
+                    misión, visión, información para accionistas, estados financieros, publicaciones, trabaja con
+                    nosotros, entre otros temas de interés.
+                </p>
+                
+            </div>
+           
+            
+        </section>
+        <section class="experiencia seccion__clara">
+            <div class="container text-center">
+                <div class="row">
+                    <div class=" columna col_12 col-md-4">
+                        <i class="bi bi-bank2"></i>
+                        <p class="experiencia__titulo">Loans</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nesciunt.</p>
+                        <div class="badges-contenedor">
+                            <span class="badge text-bg-primary">Credit Cards</span>
+                            <span class="badge text-bg-primary">Free Investment Loans</span>
+                            <span class="badge text-bg-primary">Specific Credits</span>
+                            <span class="badge text-bg-primary">Payroll Credits</span>
+                        </div>
+                    </div>
+                    <div class="columna col_12 col-md-4">
+                        <i class="bi bi-bank"></i>
+                        <p class="experiencia__titulo">Page Registration</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nesciunt.</p>
+                        <div class="badges-contenedor">
+                            <span class="badge text-bg-primary">Write</span>
+                            <span class="badge text-bg-primary">Edit</span>
+                            <span class="badge text-bg-primary">Access</span>
+
+                        </div>
+                    </div>
+                    <div class="columna col_12 col-md-4">
+                        <i class="bi bi-bank2"></i>
+                        <p class="experiencia__titulo">Cards</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, nesciunt.</p>
+                        <div class="badges-contenedor">
+                            <span class="badge text-bg-primary">Credit</span>
+                            <span class="badge text-bg-primary">Debit</span>
+                            <span class="badge text-bg-primary">Prepaid</span>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section id="proyectos" class="proyectos__recientes seccion__clara d-flex flex-column">
+            <h2 class=" seccion__titulo texto__negro">Tu Banco a un click</h2>
+            <h3 class="seccion__descripcion">¿Que podemos hacer por ti hoy?</h3>
+            <div class="container text-center proyectos__contenedor">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="proyecto">
+                            <img src="./assets/images/proyecto1.png" alt="proyecto1">
+                            <div class="overlay">
+                                <p>Quiero pagar mi Tarjeta de Credito</p>
+                                <div class="iconos-contenedor">
+                                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i
+                                            class="bi bi-credit-card-fill"></i></a>
+                                    <a href="https://www.freecodecamp.org
+                                    " target="_blank" rel="noopener noreferrer"><i class="bi bi-laptop"></i>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="proyecto">
+                            <img src="./assets/images/proyecto2.png" alt="proyecto1">
+                            <div class="overlay">
+                                <p>Quiero hacer Pagos por PSE</p>
+                                <div class="iconos-contenedor">
+                                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i
+                                            class="bi bi-paypal"></i></a>
+                                    <a href="https://www.freecodecamp.org
+                                    " target="_blank" rel="noopener noreferrer"><i class="bi bi-laptop"></i>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="proyecto">
+                            <img src="./assets/images/proyecto3.png" alt="proyecto1">
+                            <div class="overlay">
+                                <p>Quiero mi Credito de vehiculo</p>
+                                <div class="iconos-contenedor">
+                                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i
+                                            class="bi bi-car-front-fill"></i></a>
+                                    <a href="https://www.freecodecamp.org
+                                    " target="_blank" rel="noopener noreferrer"><i class="bi bi-laptop"></i>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="proyecto">
+                            <img src="./assets/images/proyecto4.png" alt="proyecto1">
+                            <div class="overlay">
+                                <p>Tengo una petición, Queja o reclamo</p>
+                                <div class="iconos-contenedor">
+                                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i
+                                            class="bi bi-question-circle-fill"></i></a>
+                                    <a href="https://www.freecodecamp.org
+                                    " target="_blank" rel="noopener noreferrer"><i class="bi bi-laptop"></i>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="proyecto">
+                            <img src="./assets/images/proyecto5.png" alt="proyecto1">
+                            <div class="overlay">
+                                <p>Quiero mi credito F D I</p>
+                                <div class="iconos-contenedor">
+                                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i
+                                            class="bi bi-currency-exchange"></i></a>
+                                    <a href="https://www.freecodecamp.org
+                                    " target="_blank" rel="noopener noreferrer"><i class="bi bi-laptop"></i>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="proyecto">
+                            <img src="./assets/images/proyecto1.png" alt="proyecto6">
+                            <div class="overlay">
+                                <p>Solicitar productos online</p>
+                                <div class="iconos-contenedor">
+                                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><i
+                                            class="bi bi-cash-coin"></i></a>
+                                    <a href="https://www.freecodecamp.org
+                                    " target="_blank" rel="noopener noreferrer"><i class="bi bi-laptop"></i>
+
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div><a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                <button type="button" class="btn btn-info">Ver mas servicios
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                </button></a>
+        </section>
+        <section class="articulos justify-content-start">
+            <h2 class="seccion__titulo texto__negro">
+                Articulos
+            </h2>
+            <div class="card">
+                <div class="card-header">
+                    Mas recientes
+                </div>
+                <ul class="list-group list-group-flush">
+                    <a href="https://www.freecodecamp.org
+                    " target="_blank" rel="noopener noreferrer">
+                        <li class="list-group-item"><b>Educación Financiera: </b>
+                            La Educación Financiera te brinda las herramientas para mantener bajo control tus finanzas
+                            personales.
+                        </li>
+                    </a>
+                    <ul class="list-group list-group-flush">
+                        <a href="https://www.freecodecamp.org
+                        " target="_blank" rel="noopener noreferrer">
+                            <li class="list-group-item"><b>Información general: </b>
+                                Conoce más sobre nuestro Banco. ¡Ingresa Aquí!</li>
+                        </a>
+                        <ul class="list-group list-group-flush">
+                            <a href="https://www.freecodecamp.org
+                            " target="_blank" rel="noopener noreferrer">
+                                <li class="list-group-item"><b>Puntos Cajero</b>
+                                    Puntos a tener en cuenta para usar tu cajero </li>
+                            </a>
+
+                            <ul class="list-group list-group-flush">
+                                <a href="https://www.freecodecamp.org
+                                " target="_blank" rel="noopener noreferrer">
+                                    <li class="list-group-item"><b>El retiro laboral</b>
+                                        Si te anticipas, ahorras e inviertes podrás gozar de tu futuro al máximo, con
+                                        una vejez tranquila.</li>
+                                </a>
+
+                                <ul class="list-group list-group-flush">
+                                    <a href="https://www.freecodecamp.org
+                                    " target="_blank" rel="noopener noreferrer">
+                                        <li class="list-group-item"><b>¿Cómo prevenir el fleteo?</b>
+                                            Entérate cómo prevenir el fleteo y estar seguro. Conoce más. </li>
+                                    </a>
+                                    <ul class="list-group list-group-flush">
+                                        <a href="https://www.freecodecamp.org
+                                    " target="_blank" rel="noopener noreferrer">
+                                            <li class="list-group-item"><b>Revista Credencial</b>
+                                                Llama ya al 01 8000 11 1161 y solicita tu ejemplar de cortesía.
+                                                servicioalclienterc@revistacredencial.com </li>
+                                        </a>
+
+
+
+            </div>
+            <a href="https://www.freecodecamp.org
+              " target="_blank" rel="noopener noreferrer">
+                <button type="button" class="btn btn-info">Ver mas articulos
+                    <i class="bi bi-arrow-right-circle-fill"></i>
+                </button></a>
+        </section>
+        <section id="testimonios" class="testimonios seccion-clara">
+            <h2 class="seccion__titulo">Testimonios</h2>
+            <h3 class="seccion__descripcion">Estos son algunos testimonios de mis clientes</h3>
+            <div id="testimonios-carrusel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <img class="testimonio-imagen rounded-circle" src="./assets/images/cliente1.svg" alt="">
+                            <p class="testimonio-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi
+                                a fuga laborum, officia quasi cumque eaque laudantium perferendis accusantium nulla quod
+                                asperiores voluptatibus, ipsam neque?</p>
+                            <div class="testimonio-info">
+                                <p class="cliente">Gino</p>
+                                <p class="cargo">Gerente de proyectos en School ThreeAngels</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <img class="testimonio-imagen rounded-circle" src="./assets/images/cliente2.svg" alt="">
+                            <p class="testimonio-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum
+                                possimus pariatur facilis fugit, debitis accusantium porro tenetur obcaecati nihil
+                                officiis suscipit molestiae totam explicabo. Omnis?</p>
+                            <div class="testimonio-info">
+                                <p class="cliente">Nohora</p>
+                                <p class="cargo">Arquitecto de datos Prosea</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container">
+                            <img class="testimonio-imagen rounded-circle" src="./assets/images/cliente3.svg" alt="">
+                            <p class="testimonio-texto">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum
+                                repellat eum, dicta ullam iusto nemo fuga possimus, quia excepturi, non quis deserunt
+                                qui officia iure?</p>
+                            <div class="testimonio-info">
+                                <p class="cliente">Leonardo</p>
+                                <p class="cargo">Gerente General Grupo marvial S.A</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonios-carrusel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonios-carrusel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                </button>
+            </div>
+        </section>
+
+    </main>
+    <div class="pre__footer">
+
+        <a href=""><img src="./assets/images/logo_ban_occidente-removebg-preview.png" alt=""></a>
+
+        <div>
+            <h6> <b>Líneas de servicio al cliente</b></h6>
+            <a href="tel:+01 800 05 14652">Nacional 01 800 05 14652</a>
+            <br>
+            <a href="tel:+(601) 3902058">Bogotá (601) 3902058</a>
+            <br>
+            <br>
+            <a href=""><b>Defensor del Consumidor Financiero</b></a>
+        </div>
+        <div>
+            <h6><b>Institucional</b></h6>
+            <a href="">Linea Etica</a>
+            <br>
+            <a href="">Educacion Financiera</a>
+            <br>
+            <a href="">Politica de Tratamiento de Datos</a>
+            <br>
+            <a href="">Sostenibilidad</a>
+
+        </div>
+        <div>
+            <h6><b>Siguenos en</b></h6>
+            <a href=""><img src="./assets/images/logo_youtbe_azul-removebg-preview.png" alt=""></a>
+            <a href=""><img src="./assets/images/logo_linkedin_azul-removebg-preview.png" alt=""></a>
+            <a href=""><img src="./assets/images/logo_twi_azul-removebg-preview.png" alt=""></a>
+            <a href=""><img src="./assets/images/logo_face_azul-removebg-preview.png" alt=""></a>
+            <a href=""><img src="./assets/images/logo_insta_azul-removebg-preview.png" alt=""></a>
+
+
+        </div>
+    </div>
+    <footer>
+        <div class="footer__top">
+            <a href=""><img src="./assets/images/logo_fiduoccidente-removebg-preview.png" alt=""></a>
+            <a href=""><img src="./assets/images/Logo_nexabpo.png" alt=""></a>
+
+            <a href=""><img src="./assets/images/logo_ciu_emp_sar_ang-removebg-preview.png" alt=""></a>
+            <a href=""><img src="./assets/images/logo_grupo_aval-removebg-preview.png" alt=""></a>
+            <a href=""><img src="./assets/images/logo-carroya.png" alt=""></a>
+        </div>
+        <div>
+            <h5>Conoce Más Servicios</h5>
+            <div>
+                <div>
+
+                    <h5>Institucional</h5>
+
+                    <a href="">Defensor del Consumidor Financiero</a>
+                    <a href="">Informacion al Accionista</a>
+                    <a href="">Informacion al Proveedor</a>
+                    <a href="">Filiales y Vinculados</a>
+                    <a href="">Planeta Azul</a>
+                    <a href="">Educacion Financiera</a>
+                    <a href="">Linea Etica</a>
+                    <a href="">Linea Etica Grupo Aval</a>
+                </div>
+                <div>
+
+                    <h5>Productos y Servicios</h5>
+
+                    <a href="">Para Personas</a>
+                    <a href="">Para Empresas</a>
+                    <a href="">Canales y Transacciones</a>
+                    <a href="">Servicios Aval</a>
+                </div>
+                <div>
+
+                    <h5>Otros</h5>
+
+                    <a href="">Horarios de oficinas</a>
+                    <a href="">Unete a nuestro equipo</a>
+                    <a href="">Mapa del Sitio</a>
+                    <a href="">Licitacion Bancaseguros</a>
+                    <a href="">Tarifas 2023</a>
+                    <a href="">Notificaciones judiciales</a>
+                    <a href="">Certificacion Subcapitalizacion</a>
+                    <a href="">Paquete Minimo de servicios</a>
+                    <a href="">Subsidio Empleo Joven</a>
+                    <a href="">Borron y cuenta nueva</a>
+                </div>
+                <div>
+
+                    <h5>Políticas</h5>
+
+                    <a href="">Términos y Condiciones</a>
+                    <a href="">Políticas de Redes Sociales</a>
+                    <a href="">Politicas de Cookies</a>
+                    <a href="">Politica de Tratamiento de Datos</a>
+                    <a href="">Personales</a>
+                    <a href="">Reversion de Pagos</a>
+                    <a href="">Fogafin</a>
+                    <a href="">Consumidor Financiero</a>
+                    <a href="">Derechos del Consumidor Financiero</a>
+                    <a href="">Deberes del Banco</a>
+                </div>
+            </div>
+        </div>
+        <div class="derechos-de-autor">
+            Creado por Oscar G Rubiano A (2023) &#169;
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
