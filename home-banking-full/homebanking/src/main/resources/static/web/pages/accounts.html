@@ -35,16 +35,16 @@
                         width="50" alt="icon_banco_occidente-removebg-preview"></a>
                 <ul class="navbar-nav d-flex justify-content-center align-items-center">
                     <li class="nav-item">
-                        <a  class="nav-link active" aria-current="page" href="#sobre-mi">Quienes somos</a>
+                        <a  class="nav-link active" aria-current="page" href="../index.html">Quienes somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#proyectos">Servicios</a>
+                        <a class="nav-link" href="../index.html">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#testimonios">Testimonios</a>
+                        <a class="nav-link" href="../index.html">Testimonios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacto" disabled>Contacto</a>
+                        <a class="nav-link" href="../index.html" disabled>Contacto</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -62,8 +62,8 @@
         <i class="fa-solid fa-arrow-down-z-a"></i>
     </div>
     <div class="header__rigth">
-        <a href="./pages/accounts.html">Personas</a>
-        <a href="">Empresas</a>
+        <a href="#">Cuentas</a>
+        <a href="./account.html">Cuenta</a>
         <a href="">Simula Solicita</a>
         <a href="">Transacciones</a>
         
@@ -85,28 +85,32 @@
     <div id="App">
         <main class="main__accounts">
             <div id="clock"></div>
-            <aside>Tus cuentas</aside>
-            <h1>!Bienvenido{{firstClient}}</h1>
+            <aside class="seccion__titulo texto__blanco">Tus cuentas</aside>
+            <h1>¡Bienvenido&nbsp;{{firstClient}}&nbsp;{{lastNameClient}}!</h1>
+            <img class="hero-imagen-desarrollador rounded-circle"
+                    src="../assets/images/logo-user-removebg-preview.png" width="50" alt="foto user">
             <hr>
-            <p>Numero de Cuenta<br>
-                {{}}</p>
-            <p>Fecha de creacion<br>
-                {{}}</p>
-            <p>Saldo<br>
-                {{}}</p>
-            <button>Listado de movimientos</button>
-            <hr>
-            <hr>
-            <h1>!Bienvenido{{}}</h1>
-            <hr>
-            <p>Numero de Cuenta<br>
-                {{}}</p>
-            <p>Fecha de creacion<br>
-                {{}}</p>
-            <p>Saldo<br>
-                {{}}</p>
-            <button>Listado de movimientos</button>
+            <p>Numero de Cuenta;:<br>
+                {{accountsClient[0].number}}</p>
+            <p>Fecha de creacion:<br>
 
+            {{accountsClient[0].creationDate}}</p>
+            <p>Saldo:<br>
+                {{accountsClient[0].balance}}</p>
+            <button>Listado de movimientos</button>
+            <hr>
+            <hr>
+            <h1>¡Bienvenido&nbsp;{{secondClient}}&nbsp;{{lastNameClient2}}!</h1>
+            <img class="hero-imagen-desarrollador rounded-circle"
+                    src="../assets/images/logo-user-removebg-preview.png" width="50" alt="foto user">
+            <hr>
+            <p>Numero de Cuenta:<br>
+                {{accountsClient[1].number}}</p>
+            <p>Fecha de creacion:<br>
+                {{accountsClient[1].creationDate}}</p>
+            <p>Saldo:<br>
+                {{accountsClient[1].balance}}</p>
+            <button>Listado de movimientos</button>
 
 
 
@@ -303,39 +307,39 @@
                         <li class="list-group-item"><b>Educación Financiera: </b>
                             La Educación Financiera te brinda las herramientas para mantener bajo control tus finanzas personales.
                         </li>
-                    </a>
+                    </a></ul>
                     <ul class="list-group list-group-flush">
                         <a href="https://www.freecodecamp.org
                         " target="_blank" rel="noopener noreferrer">
                             <li class="list-group-item"><b>Información general:  </b>
                                 Conoce más sobre nuestro Banco. ¡Ingresa Aquí!</li>
-                        </a>
+                        </a></ul>
                         <ul class="list-group list-group-flush">
                             <a href="https://www.freecodecamp.org
                             " target="_blank" rel="noopener noreferrer">
                                 <li class="list-group-item"><b>Puntos Cajero</b>
                                     Puntos a tener en cuenta para usar tu cajero </li>
-                            </a>
+                            </a></ul>
 
                             <ul class="list-group list-group-flush">
                                 <a href="https://www.freecodecamp.org
                                 " target="_blank" rel="noopener noreferrer">
                                     <li class="list-group-item"><b>El retiro laboral</b>
                                         Si te anticipas, ahorras e inviertes podrás gozar de tu futuro al máximo, con una vejez tranquila.</li>
-                                </a>
+                                </a></ul>
 
                                 <ul class="list-group list-group-flush">
                                     <a href="https://www.freecodecamp.org
                                     " target="_blank" rel="noopener noreferrer">
                                         <li class="list-group-item"><b>¿Cómo prevenir el fleteo?</b>
                                             Entérate cómo prevenir el fleteo y estar seguro. Conoce más. </li>
-                                    </a>
+                                    </a></ul>
                                 <ul class="list-group list-group-flush">
                                     <a href="https://www.freecodecamp.org
                                     " target="_blank" rel="noopener noreferrer">
                                         <li class="list-group-item"><b>Revista Credencial</b>
                                             Llama ya al 01 8000 11 1161 y solicita tu ejemplar de cortesía. servicioalclienterc@revistacredencial.com </li>
-                                    </a>
+                                    </a></ul>
 
 
 
