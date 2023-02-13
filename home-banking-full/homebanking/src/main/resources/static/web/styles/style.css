@@ -147,21 +147,17 @@ header div .header__rigth a:hover{
   display: flex;
   
   
-}
-.main__accounts{
- border: 1px solid red;
+} .main__accounts{
+ /* border: 1px solid red;
  height: 80vh;
  width: 100%;
-  background-image: url(../assets/images/background_cuentas.jpg);
+   background-image: url(../assets/images/background_cuentas.jpg);
   background-repeat:no-repeat;
-  background-size: 100%;
+  background-size: 100%; 
   
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-}
+  color: white; */
+ margin-left: 10rem;
+} 
 section{
   display: flex;
   flex-direction: column;
@@ -196,7 +192,7 @@ h1{
   font-size: 1.2rem;
   color:black;
   
-      height: calc(100vh -  8em);  
+      /* height: calc(100vh -  8em); */  
       
     color: rgba(255,255,255,.75);
      font-family: 'Anonymous Pro', monospace;  
