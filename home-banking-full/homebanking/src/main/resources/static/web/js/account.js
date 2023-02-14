@@ -1,23 +1,27 @@
-const { createApp } = Vue;
+const { createApp } = Vue
 
 createApp({
     data() {
         return {
             data: [],
+            transactions:[],
+            id: new URLSearchParams(location.search).get('id'),
             state: "accounts",
             limit: 5,
         }
     }, created() {
         this.loadData();
     }, methods: {
-        loadData: function () {
-            axios.get("http://localhost:8080/api/clients/1")
+        loadData () {
+            axios.get("http://localhost:8080/api/transactions/")
                 .then(response => {
-                    this.data = response.data;
-                    this.data.accounts.sort((a, b) => a.id - b.id);
+                    this.data = response.data
+                    this.transactions=this.data
+                    /* this.data.transactions.sort((a, b) => a.id - b.id); */
                     console.log(this.data);
+                    console.log(this.transactions);
                 })
                 .catch(err => console.log(err));
         },
     }
-}), mount('app');
+}). mount('#App')
