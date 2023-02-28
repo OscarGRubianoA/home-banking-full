@@ -626,6 +626,11 @@ footer div div div h5::after{
     }
   
 }
+@media screen and (max-width:900px){
+  header div .header__rigth{
+    display: none;
+  }
+}
 @media screen and (min-width:700px){
 .hero__inferior__imagen{
  width: 600px;
