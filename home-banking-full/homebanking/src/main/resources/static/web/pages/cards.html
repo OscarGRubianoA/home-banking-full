@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/LOGOI.png" type="image/x-icon">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aladin&family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Euphoria+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/86e6690089.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Cards</title>
+</head>
+
+<body>
+    <div id="app">
+        <nav class="navbar navbar-expand-sm navbar-light">
+            <div class="container-fluid">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarToggler"
+                aria-controls="navbarTogglerDemo01"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarToggler">
+                <a class="navbar-brand" href="#"
+                  ><img
+                    src="../assets/images/icon_banco_occidente-removebg-preview.png"
+                    width="50"
+                    alt="icon_banco_occidente-removebg-preview"
+                /></a>
+                <ul
+                  class="navbar-nav d-flex justify-content-center align-items-center"
+                >
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="../index.html"
+                      >Quienes somos</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/accounts.html"
+                      >Contactanos</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/account.html">Oficinas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../pages/cards.html"
+                      >Haz tus pagos</a
+                    >
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input
+                    class="form-control me-2"
+                    type="search"
+                    placeholder="Type here"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-info" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+          <header>
+            <div class="container-fluid">
+              <div class="header__left">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+                <i class="fa-solid fa-arrow-up-a-z"></i>
+                <i class="fa-solid fa-arrow-down-z-a"></i>
+              </div>
+              <div class="header__rigth">
+                <a href="../pages/accounts.html">Cuentas</a>
+                <a href="../pages/account.html">Cuenta</a>
+                <a href="..pages/cards.html">SimulaSolicita</a>
+                <a href="#">Transacciones</a>
+                <div id="logo__rolex">
+                  <!--  <img class="logo__rolex" src="./assets/images/Rolex-Logo-removebg-preview.png" alt=""> -->
+      
+                  <h1 id="clock"></h1>
+                </div>
+              </div>
+            </div>
+          </header>
+        <main class="main_cards d-flex flex-column justify-content-center gap-2">
+           <!--  <div class="nav3 d-flex justify-content-center flex-column mt-5 align-items-center">
+                <ul
+                    class="navegacion3 d-flex flex-row gap-2 flex-wrap justify-content-center align-items-center  animate__animated animate__bounce mb-5">
+                    <li>
+                        <a href="create_cards.html">
+                            <i>
+                                <lord-icon src="https://cdn.lordicon.com/nocovwne.json" trigger="hover"
+                                    style="width:50px;height:50px">
+                                </lord-icon>
+                            </i>
+                            <span class="text-center">Request Cards</span>
+                        </a>
+                    </li>
+                </ul>
+            </div> -->
+            <div class="nav3 d-flex justify-content-center flex-column mt-5 align-items-center">
+              <ul
+                  class="navegacion3 d-flex flex-row gap-2 flex-wrap justify-content-center align-items-center  animate__animated animate__bounce mb-5">
+                  <li>
+                      <a href="./createCards.html">
+                          <i>
+                               <lord-icon src="https://cdn.lordicon.com/nocovwne.json" trigger="hover"
+                                  style="width:50px;height:50px">
+                              </lord-icon> 
+                          </i>
+                          <span class="request__cards">Request Cards</span>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+            <div>
+                <h1 class="tittles text-center mt-5 p-3">DEBIT CARDS</h1>
+            </div>
+            <div v-show="debit_cards.length == 0">
+                <div
+                    class="tarjetas_productos d-flex flex-row flex-wrap justify-content-center align-items-center mb-5">
+                    <div data-aos="fade-center d-flex align-items-center justify-content-center">
+                        <h3 class="subtitulo_sucursal text-center m-3 text-dark">YOU STILL DO NOT HAVE DEBIT CARDS WITH
+                            US</h3>
+                        <p class="parrafos_productos text-center">"We invite you to acquire our products and achieve
+                            your dreams quickly. Ask Us how"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container_cc gap-5" v-show="debit_cards.length>0">
+                <div class="card_cc" v-for="card in debit_cards">
+                    <div class="front_cc">
+                        <p class="paragraph_card fs-6 text-center text-white mt-2"><b>Free National phone number:</b> 01
+                            8000 512
+                            380</p>
+                        <div class="magnetic"></div>
+                        <div class="sign_cvv d-flex flex-row align-items-center justify-content-center">
+                            <div class="card_type_back">{{card.type}}</div>
+                            <div class="sign text-center">{{card.cardHolder}}</div>
+                            <div class="cvv">CVV: {{card.cvv}}</div>
+                        </div>
+                        <h3 class="card_number_back">{{card.number}}</h3>
+                        <p class="paragraph_card fs-6 text-start m-3 d-flex align-items-center gap-2 text-white">
+                            <span class="material-symbols-outlined text-white">
+                                recycling
+                            </span>
+                            Made from 85.5% recycled plastic
+                        </p>
+                        <h5 class="card_date_back">{{card.thruDate}}</h5>
+                        <h5 class="card_holder_back">{{card.cardHolder}}</h5>
+                        <p class="paragraph_card fs-6 text-center m-3 text-white">This card is issued by Brothers Bank
+                            pursuant to
+                            license by Mastercard international</p>
+                    </div>
+                    <div class="back_cc">
+                        <h6 class="tittle_credit_card m-4 fs-4">BANCO DE OCCIDENTE</h6>
+                        <img class="img_logo_card" src="../assets/images/LOGOI.png" alt="logo card">
+                        <img class="img_direction" src="../assets/images/flecha.png" alt="direction introduce">
+                        <img class="img_chip" src="../assets/images/chip_card.png" alt="Image chip">
+                        <img class="img_paywave" src="../assets/images/paywave.png" alt="Image paywave">
+                        <h3 class="card_type">{{card.type}}</h3>
+                        <img class="color_type" src="../assets/images/dorado.png" alt="color type"
+                            v-if="card.color=='GOLD'">
+                        <img class="color_type" src="../assets/images/titanio.png" alt="color type"
+                            v-else-if="card.color=='TITANIUM'">
+                        <img class="color_type" src="../assets/images/plata.png" alt="color type"
+                            v-else-if="card.color=='SILVER'">
+                        <p class="color_name">{{card.color}}</p>
+                        <h3 class="card_number">{{card.number}}</h3>
+                        <h5 class="card_date">{{card.thruDate}}</h5>
+                        <h5 class="card_holder">{{card.cardHolder}}</h5>
+                        <img class="mastercard" src="../assets/images/mastercard.png" alt="logo mastercard">
+                    </div>
+                </div>
+            </div>
+            <h1 class="tittles text-center mt-5 p-3">CREDIT CARDS</h1>
+            <div v-show="credit_cards.length == 0">
+                <div
+                    class="tarjetas_productos d-flex flex-row flex-wrap justify-content-center align-items-center mb-5">
+                    <div data-aos="fade-center d-flex align-items-center justify-content-center">
+                        <h3 class="subtitulo_sucursal text-center m-3 text-dark">YOU STILL DO NOT HAVE CREDIT CARDS WITH
+                            US</h3>
+                        <p class="parrafos_productos text-center">"We invite you to acquire our products and achieve
+                            your dreams quickly. Ask Us how"</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container_cc gap-5" v-show="credit_cards.length > 0">
+                <div class="card_cc" v-for="card in credit_cards">
+                    <div class="front_cc">
+                        <p class="paragraph_card fs-6 text-center mt-2"><b>Free National phone number:</b> 01 8000 512
+                            380</p>
+                        <div class="magnetic"></div>
+                        <div class="sign_cvv d-flex flex-row align-items-center justify-content-center">
+                            <div class="card_type_back">{{card.type}}</div>
+                            <div class="sign text-center">{{card.cardHolder}}</div>
+                            <div class="cvv">CVV: {{card.cvv}}</div>
+                        </div>
+                        <h3 class="card_number_back">{{card.number}}</h3>
+                        <p class="paragraph_card fs-6 text-start m-3 d-flex align-items-center gap-2">
+                            <span class="material-symbols-outlined">
+                                recycling
+                            </span>
+                            Made from 85.5% recycled plastic
+                        </p>
+                        <h5 class="card_date_back">Valid {{card.thruDate}}</h5>
+                        <h5 class="card_holder_back">{{card.cardHolder}}</h5>
+                        <p class="paragraph_card fs-6 text-center m-3">This card is issued by Brothers Bank pursuant to
+                            license by Mastercard international</p>
+                    </div>
+                    <div class="back_cc">
+                        <div>
+                            <h6 class="tittle_credit_card m-4 fs-4">BANCO DE OCCIDENTE</h6>
+                            <img class="img_logo_card" src="../assets/images/LOGOI.png" alt="logo card">
+                            <img class="img_direction" src="../assets/images/flecha.png" alt="direction introduce">
+                            <img class="img_chip" src="../assets/images/chip_card.png" alt="Image chip">
+                            <img class="img_paywave" src="../assets/images/paywave.png" alt="Image paywave">
+                            <h3 class="card_type">{{card.type}}</h3>
+                            <img class="color_type" src="../assets/images/dorado.png" alt="color type"
+                                v-if="card.color=='GOLD'">
+                            <img class="color_type" src="../assets/images/titanio.png" alt="color type"
+                                v-else-if="card.color=='TITANIUM'">
+                            <img class="color_type" src="../assets/images/plata.png" alt="color type"
+                                v-else-if="card.color=='SILVER'">
+                            <p class="color_name">{{card.color}}</p>
+                            <h3 class="card_number">{{card.number}}</h3>
+                            <h5 class="card_date">Valid {{card.thruDate}}</h5>
+                            <h5 class="card_holder">{{card.cardHolder}}</h5>
+                            <img class="mastercard" src="../assets/images/mastercard.png" alt="logo mastercard">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+     
+    </div>
+    <div class="pre__footer">
+        <a href=""
+          ><img
+            src="../assets/images/logo_ban_occidente-removebg-preview.png"
+            alt=""
+        /></a>
+  
+        <div>
+          <h6><b>Líneas de servicio al cliente</b></h6>
+          <a href="tel:+01 800 05 14652">Nacional 01 800 05 14652</a>
+          <br />
+          <a href="tel:+(601) 3902058">Bogotá (601) 3902058</a>
+          <br />
+          <br />
+          <a href=""><b>Defensor del Consumidor Financiero</b></a>
+        </div>
+        <div>
+          <h6><b>Institucional</b></h6>
+          <a href="">Linea Etica</a>
+          <br />
+          <a href="">Educacion Financiera</a>
+          <br />
+          <a href="">Politica de Tratamiento de Datos</a>
+          <br />
+          <a href="">Sostenibilidad</a>
+        </div>
+        <div>
+          <h6><b>Siguenos en</b></h6>
+          <a href=""
+            ><img
+              src="../assets/images/logo_youtbe_azul-removebg-preview.png"
+              alt=""
+          /></a>
+          <a href=""
+            ><img
+              src="../assets/images/logo_linkedin_azul-removebg-preview.png"
+              alt=""
+          /></a>
+          <a href=""
+            ><img src="../assets/images/logo_twi_azul-removebg-preview.png" alt=""
+          /></a>
+          <a href=""
+            ><img
+              src="../assets/images/logo_face_azul-removebg-preview.png"
+              alt=""
+          /></a>
+          <a href=""
+            ><img
+              src="../assets/images/logo_insta_azul-removebg-preview.png"
+              alt=""
+          /></a>
+        </div>
+      </div>
+      <footer>
+        <div class="footer__top">
+          <a href=""
+            ><img
+              src="./assets/images/logo_fiduoccidente-removebg-preview.png"
+              alt=""
+          /></a>
+          <a href=""><img src="./assets/images/Logo_nexabpo.png" alt="" /></a>
+  
+          <a href=""
+            ><img
+              src="./assets/images/logo_ciu_emp_sar_ang-removebg-preview.png"
+              alt=""
+          /></a>
+          <a href=""
+            ><img
+              src="./assets/images/logo_grupo_aval-removebg-preview.png"
+              alt=""
+          /></a>
+          <a href=""><img src="./assets/images/logo-carroya.png" alt="" /></a>
+        </div>
+        <div>
+          <h5>Conoce Más Servicios</h5>
+          <div>
+            <div>
+              <h5>Institucional</h5>
+  
+              <a href="">Defensor del Consumidor Financiero</a>
+              <a href="">Informacion al Accionista</a>
+              <a href="">Informacion al Proveedor</a>
+              <a href="">Filiales y Vinculados</a>
+              <a href="">Planeta Azul</a>
+              <a href="">Educacion Financiera</a>
+              <a href="">Linea Etica</a>
+              <a href="">Linea Etica Grupo Aval</a>
+            </div>
+            <div>
+              <h5>Productos y Servicios</h5>
+  
+              <a href="">Para Personas</a>
+              <a href="">Para Empresas</a>
+              <a href="">Canales y Transacciones</a>
+              <a href="">Servicios Aval</a>
+            </div>
+            <div>
+              <h5>Otros</h5>
+  
+              <a href="">Horarios de oficinas</a>
+              <a href="">Unete a nuestro equipo</a>
+              <a href="">Mapa del Sitio</a>
+              <a href="">Licitacion Bancaseguros</a>
+              <a href="">Tarifas 2023</a>
+              <a href="">Notificaciones judiciales</a>
+              <a href="">Certificacion Subcapitalizacion</a>
+              <a href="">Paquete Minimo de servicios</a>
+              <a href="">Subsidio Empleo Joven</a>
+              <a href="">Borron y cuenta nueva</a>
+            </div>
+            <div>
+              <h5>Políticas</h5>
+  
+              <a href="">Términos y Condiciones</a>
+              <a href="">Políticas de Redes Sociales</a>
+              <a href="">Politicas de Cookies</a>
+              <a href="">Politica de Tratamiento de Datos</a>
+              <a href="">Personales</a>
+              <a href="">Reversion de Pagos</a>
+              <a href="">Fogafin</a>
+              <a href="">Consumidor Financiero</a>
+              <a href="">Derechos del Consumidor Financiero</a>
+              <a href="">Deberes del Banco</a>
+            </div>
+          </div>
+        </div>
+        <div class="derechos-de-autor">
+          Creado por Oscar G Rubiano A (2023) &#169;
+        </div>
+      </footer>
+    
+    <script src="https://cdn.lordicon.com/pzdvqjsp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.js"></script>
+        <script src="../js/cards.js"></script>
+
+</body>
+
+</html>
