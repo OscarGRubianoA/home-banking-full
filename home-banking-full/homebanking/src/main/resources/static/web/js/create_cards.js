@@ -3,7 +3,8 @@ createApp({
     data(){
         return{
             dates:[],
-            accounts:[]
+            accounts:[],
+            account:[],
         }
     }
 })
