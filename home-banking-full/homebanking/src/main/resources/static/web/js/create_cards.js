@@ -5,6 +5,7 @@ createApp({
             dates:[],
             accounts:[],
             account:[],
+            data:[]
         }
     }
 })
