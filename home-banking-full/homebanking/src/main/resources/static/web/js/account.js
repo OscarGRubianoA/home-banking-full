@@ -17,7 +17,7 @@ createApp({
                 .then(response => {
                     this.data = response.data
                     this.transactions=this.data
-                    /* this.data.transactions.sort((a, b) => a.id - b.id); */
+                     this.data.transactions.sort((a, b) => a.id - b.id); 
                     console.log(this.data);
                     console.log(this.transactions);
                 })
