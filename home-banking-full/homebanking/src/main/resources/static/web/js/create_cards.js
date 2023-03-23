@@ -5,7 +5,8 @@ createApp({
             dates:[],
             accounts:[],
             account:[],
-            data:[]
+            data:[],
+            amount:null
         }
     }
 })
