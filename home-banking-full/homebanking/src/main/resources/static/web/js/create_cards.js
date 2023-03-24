@@ -6,7 +6,8 @@ createApp({
             accounts:[],
             account:[],
             data:[],
-            amount:null
+            amount:null,
+            cards:[]
         }
     }
 })
