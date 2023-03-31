@@ -4,3 +4,13 @@ if(typeof fact==="String"){
 }else{
     console.log("Esto no es un String")
 }
+
+const {createApp}=Vue
+
+createApp={
+    data(){
+        return{
+            data:[],
+        }
+    }
+}
