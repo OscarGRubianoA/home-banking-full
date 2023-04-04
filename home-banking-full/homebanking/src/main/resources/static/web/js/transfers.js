@@ -11,7 +11,8 @@ createApp={
     data(){
         return{
             data:[],
-            cards:[]
+            cards:[],
+            transactions
         }
     }
 }
