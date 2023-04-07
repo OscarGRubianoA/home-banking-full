@@ -7,4 +7,12 @@ function displayTime() {
     document.getElementById("clock").innerHTML = clock;
   }
   setInterval(displayTime, 1000);
-  const createApp = Vue
+  const {createApp} = Vue
+  createApp({
+    data(){
+      return{
+
+      }
+    }
+  })
+  
