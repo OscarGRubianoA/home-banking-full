@@ -7,7 +7,7 @@ if(typeof fact==="String"){
 
 const {createApp}=Vue
 
-createApp={
+createApp({
     data(){
         return{
             data:[],
@@ -16,3 +16,4 @@ createApp={
         }
     }
 }
+)
