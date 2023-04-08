@@ -11,6 +11,9 @@ function displayTime() {
   createApp({
     data(){
       return{
+        variable1:[],
+        variable2:[]
+
 
       }
     }
