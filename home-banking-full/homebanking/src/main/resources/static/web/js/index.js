@@ -12,7 +12,9 @@ function displayTime() {
     data(){
       return{
         variable1:[],
-        variable2:[]
+        variable2:[],
+        email:"",
+        password:""
 
 
       }
