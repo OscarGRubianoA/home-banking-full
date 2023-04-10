@@ -14,7 +14,9 @@ function displayTime() {
         variable1:[],
         variable2:[],
         email:"",
-        password:""
+        password:"",
+        accounts:[]
+
 
 
       }
