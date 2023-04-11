@@ -12,7 +12,8 @@ createApp({
         return{
             data:[],
             cards:[],
-            transactions
+            transactions:[],
+            loader:true
         }
     }
 }
