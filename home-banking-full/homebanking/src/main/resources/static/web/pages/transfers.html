@@ -11,6 +11,9 @@
     <h1>Transferencias</h1>
     <form action="">
         <legend>My form</legend>
+        <select [(ngModel)]="model">
+            <option *ngFor="let item of list" [value]="item">{{item}}</option>
+        </select>
     </form>
 </body>
 </div>
