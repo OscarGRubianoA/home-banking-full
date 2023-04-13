@@ -13,7 +13,8 @@ createApp({
             data:[],
             cards:[],
             transactions:[],
-            loader:true
+            loader:true,
+            accounts:[]
         }
     }
 }
