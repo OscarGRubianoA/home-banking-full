@@ -526,6 +526,7 @@ margin:10px;
 }
 .register{
 background-image: url(../assets/images/proyecto1.png);
+background-repeat: no-repeat;
 }
  .pre__footer{
   display: flex;
