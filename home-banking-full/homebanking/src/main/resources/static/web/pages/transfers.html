@@ -13,6 +13,7 @@
         <legend>My form</legend>
         <select [(ngModel)]="model">
             <option *ngFor="let item of list" [value]="item">{{item}}</option>
+            <option>{{account.number}}</option>
         </select>
     </form>
 </body>
