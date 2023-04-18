@@ -132,7 +132,7 @@
               <th scope="row">{{transaction.id}}</th>
               <td>{{transaction.type}}</td>
               <td>{{transaction.description}}</td>
-              <td>{{transaction.date}}</td>
+              <td>{{transaction.date.slice(0,16)}}</td>
               <td v-if="transaction.amount>0">{{transaction.amount}}</td>
               
               

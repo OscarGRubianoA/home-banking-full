@@ -527,6 +527,7 @@ margin:10px;
 .register{
 background-image: url(../assets/images/proyecto1.png);
 background-repeat: no-repeat;
+background-size:cover;
 }
  .pre__footer{
   display: flex;
