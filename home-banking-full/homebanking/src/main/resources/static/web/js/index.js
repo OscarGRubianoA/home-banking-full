@@ -20,6 +20,13 @@ function displayTime() {
 
 
       }
-    }
+    },methods:{
+      logout(){axios.get("api/logout")
+      .then(response=>{
+        this.variable1=response.data
+      })
+
+      }
+    }.catch(err=>(console.log(err)))
   })
   
