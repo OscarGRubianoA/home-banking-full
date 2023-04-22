@@ -14,7 +14,8 @@ createApp({
             cards:[],
             transactions:[],
             loader:true,
-            accounts:[]
+            accounts:[],
+            players:[]
         }
     }
 }
