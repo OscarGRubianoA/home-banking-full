@@ -14,6 +14,7 @@
         <select [(ngModel)]="model">
             <option *ngFor="let item of list" [value]="item">{{item}}</option>
             <option>{{account.number}}</option>
+            <option value="">{{account.origin}}</option>
             <option value="">{{account.destiny}}</option>
         </select>
     </form>
